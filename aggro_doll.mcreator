@@ -1,0 +1,121 @@
+{
+  "mod_elements": [
+    {
+      "name": "AggroDoll",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aggro_doll",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/aggro_doll/models/item/aggro_doll.json",
+          "src/main/java/net/k1r1enko/aggro_doll/item/AggroDollItem.java"
+        ]
+      }
+    },
+    {
+      "name": "AggroDollRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aggro_doll_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/k1r1enko/aggro_doll/procedures/AggroDollRightclickedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "AggroDollRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aggro_doll_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/aggro_doll/advancement/recipes/aggro_doll_recipe.json",
+          "src/main/resources/data/minecraft/recipe/aggro_doll_recipe.json"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {},
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "item.aggro_doll.aggro_doll.description_0": "When used: Set attack target of hostile entities in 50 blocks distance to you",
+      "item.aggro_doll.aggro_doll.description_1": "Cooldown: 10 seconds",
+      "item.aggro_doll.aggro_doll": "Aggro Doll"
+    },
+    "uk_ua": {
+      "item.aggro_doll.aggro_doll.description_0": "При використанні: Змушує ворожих істот в радіусі 50 блоків атакувати вас.",
+      "item.aggro_doll.aggro_doll.description_1": "Перезаряджання: 10 секунд",
+      "item.aggro_doll.aggro_doll": "Кукла провокації"
+    },
+    "ru_ru": {
+      "item.aggro_doll.aggro_doll.description_0": "При использовании: Заставляет вражеских существ в радиусе 50 блоков атаковать вас.",
+      "item.aggro_doll.aggro_doll.description_1": "Перезарядка: 10 секунд",
+      "item.aggro_doll.aggro_doll": "Кукла провокации"
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/java/net/k1r1enko/aggro_doll/init/AggroDollModItems.java",
+      "src/main/java/net/k1r1enko/aggro_doll/AggroDollMod.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/k1r1enko/aggro_doll/init/AggroDollModTabs.java",
+      "src/main/resources/pack.mcmeta"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "aggro_doll",
+    "modName": "Aggro Doll",
+    "version": "1.0.0",
+    "description": "Allow you to aggro monsters around you",
+    "author": "k1r1enko",
+    "websiteURL": "https://ihavenosite.com",
+    "license": "MIT License",
+    "serverSideOnly": false,
+    "modPicture": "icon",
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-1.21.1",
+    "credits": "Created using MCreator ",
+    "modElementsPackage": "net.k1r1enko.aggro_doll"
+  },
+  "mcreatorVersion": 202500345720
+}
